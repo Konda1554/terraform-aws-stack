@@ -64,12 +64,6 @@ resource "aws_elastic_beanstalk_environment" "pega-bean-prod" {
   }
 
   setting {
-    name      = "LOGGING_APPENDER"
-    namespace = "elasticbeanstalk:application:environment"
-    value     = "GRAYLOG"
-  }
-
-  setting {
     name      = "SystemType"
     namespace = "aws:elasticbeanstalk:healthreporting:system"
     value     = "basic"
