@@ -1,20 +1,20 @@
-variable REGION {
+variable "REGION" {
   default = "ap-south-1"
 }
-variable AMIS {
-  type = map
+variable "AMIS" {
+  type = map(any)
   default = {
     ap-south-1 = "ami-0cca134ec43cf708f"
-    us-east-1 = "ami-0b5eea76982371e91"
+    us-east-1  = "ami-0b5eea76982371e91"
   }
 }
-variable PUB_KEY_PATH {
+variable "PUB_KEY_PATH" {
   default = "pegakey.pub"
 }
-variable PRIV_KEY_PATH {
+variable "PRIV_KEY_PATH" {
   default = "pegakey"
 }
-variable USER {
+variable "USER" {
   default = "ec2-user"
 }
 variable "MYIP" {

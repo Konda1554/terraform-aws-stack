@@ -1,7 +1,7 @@
-terraform  {
-  backend "s3"{
+terraform {
+  backend "s3" {
     bucket = "mum-qwe"
-    key = "terraform/backend"
+    key    = "terraform/backend"
     region = "ap-south-1"
   }
 }
