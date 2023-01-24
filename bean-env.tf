@@ -60,7 +60,7 @@ resource "aws_elastic_beanstalk_environment" "pega-bean-prod" {
   setting {
     name      = "environment"
     namespace = "elasticbeanstalk:application:environment"
-    value     = "prod"
+    value     = "Prod"
   }
 
   setting {
